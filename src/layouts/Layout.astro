@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css"; // estilos globales (Tailwind importado aquí)
 import "@fontsource-variable/onest"; // fuente
+import Header from "../components/Header.astro";
 ---
 <html lang="es">
     <head>
@@ -8,10 +9,12 @@ import "@fontsource-variable/onest"; // fuente
         <title>SARA</title>
     </head>
     <body
-        class="min-h-screen w-screen text-white p-4 box-border overflow-y-auto overflow-x-hidden"
+        class="min-h-screen w-screen text-white box-border overflow-y-auto overflow-x-hidden"
         style="background: linear-gradient(to right, #0052D4 0%, #4364F7 50%, #6FB1FC 100%);"
     >
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <Header />
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <!-- Contenido de la página -->
         <slot />
         </div>
     </body>
