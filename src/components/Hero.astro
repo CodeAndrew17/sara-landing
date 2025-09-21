@@ -1,0 +1,104 @@
+---
+// src/components/Hero.astro
+---
+<!-- section principal -->
+<section
+    id="Hero"
+    class="bg-white/60 backdrop-blur-[12px] p-10 rounded-[2.5rem] shadow-[0_20px_40px_rgba(0,0,0,0.3)] text-center border border-white/80 ring-4 ring-white/40 transition-all duration-500 hover:scale-[1.01] mb-10"
+>
+    <div class="flex flex-col items-center justify-center text-left px-9">
+        <!-- Imagen y nombre sara div general -->
+        <div class="flex flex-row items-center mb-8 mr-15">
+            <img 
+                src="/images/sara.png" 
+                alt="Logo SARA" 
+                class="mx-auto w-32 h-32 md:w-48 md:h-48 lg:w-40 lg:h-40 rounded-full" 
+            />
+            <h1 class="text-9xl font-bold mt-2 bg-gradient-to-r from-cyan-500 via-purple-500 to-blue-600 bg-clip-text text-transparent">
+                SARA
+            </h1>
+        </div>
+        <!-- enlace para ver la pagina web y repos  -->
+        <div class="space-y-4 text-center">
+            <div class="flex gap-4 justify-start mb-8">
+                <!-- button GitHub FRONTEND -->
+                <a 
+                href="https://github.com/CodeAndrew17/S.A.R.A_FRONTEND"
+                title="Pagina de SARA" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Ir a mi GitHub"
+                class="flex items-center gap-2 
+                    px-6 py-3 text-base 
+                    rounded-lg bg-zinc-700 text-white 
+                    hover:bg-zinc-600 hover:scale-105 
+                    transition duration-200 shadow
+
+                    sm:px-7 sm:py-4 sm:text-xl sm:w-50
+                    xl:px-4 xl:py-2 xl:text-base xl:h-14   
+                    "
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                        class="w-7 h-7 sm:w-8 sm:h-8 xl:w-6 xl:h-6"
+                    >
+                        <path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.1 3.29 9.42 7.86 10.96.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2.01-3.2.69-3.88-1.54-3.88-1.54-.53-1.36-1.3-1.72-1.3-1.72-1.06-.72.08-.71.08-.71 1.18.08 1.8 1.21 1.8 1.21 1.04 1.79 2.73 1.28 3.4.98.11-.76.41-1.28.75-1.57-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.46-2.3 1.2-3.12-.12-.3-.52-1.52.11-3.17 0 0 .97-.31 3.18 1.19a11.03 11.03 0 0 1 2.9-.39c.99.01 1.99.13 2.91.39 2.2-1.5 3.17-1.19 3.17-1.19.64 1.65.24 2.87.12 3.17.75.82 1.2 1.86 1.2 3.12 0 4.43-2.7 5.4-5.27 5.68.42.36.8 1.1.8 2.22 0 1.6-.02 2.89-.02 3.29 0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12c0-6.28-5.23-11.5-11.5-11.5z"/>
+                    </svg>
+                    <span class="hidden sm:inline"> Frontend</span>
+                </a>
+                <!-- button Git hub Backend -->
+                    <a 
+                href="https://github.com/CesarValbuena2725/S.A.R.A_BACKEND"
+                title="Pagina de SARA" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Ir a mi GitHub"
+                class="flex items-center gap-2 
+                    px-6 py-3 text-base 
+                    rounded-lg bg-zinc-700 text-white 
+                    hover:bg-zinc-600 hover:scale-105 
+                    transition duration-200 shadow
+
+                    sm:px-7 sm:py-4 sm:text-xl sm:w-50
+                    xl:px-4 xl:py-2 xl:text-base"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                        class="w-7 h-7 sm:w-8 sm:h-8 xl:w-6 xl:h-6"
+                    >
+                        <path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.1 3.29 9.42 7.86 10.96.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2.01-3.2.69-3.88-1.54-3.88-1.54-.53-1.36-1.3-1.72-1.3-1.72-1.06-.72.08-.71.08-.71 1.18.08 1.8 1.21 1.8 1.21 1.04 1.79 2.73 1.28 3.4.98.11-.76.41-1.28.75-1.57-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.46-2.3 1.2-3.12-.12-.3-.52-1.52.11-3.17 0 0 .97-.31 3.18 1.19a11.03 11.03 0 0 1 2.9-.39c.99.01 1.99.13 2.91.39 2.2-1.5 3.17-1.19 3.17-1.19.64 1.65.24 2.87.12 3.17.75.82 1.2 1.86 1.2 3.12 0 4.43-2.7 5.4-5.27 5.68.42.36.8 1.1.8 2.22 0 1.6-.02 2.89-.02 3.29 0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12c0-6.28-5.23-11.5-11.5-11.5z"/>
+                    </svg>
+                    <span class="hidden sm:inline"> Backend</span>
+                </a>
+                <!-- button Pagina SARA -->
+            </div>
+            <a
+            href="https://sarafrontend-git-main-andres-felipes-projects-b859d2f8.vercel.app"
+            title="Página de SARA"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center justify-center gap-3 
+                    px-8 py-4 text-lg 
+                    sm:w-70
+                    rounded-xl bg-gradient-to-r from-blue-400 to-blue-500 
+                    text-white font-semibold
+                    hover:from-blue-500 hover:to-blue-600 
+                    hover:scale-105 transition duration-300 shadow-xl
+                    sm:px-10 sm:py-5 sm:text-xl
+                    xl:px-6 xl:py-3 xl:text-lg
+                    md:w-104"
+            >
+            <img 
+                src="/images/iconForm.png" 
+                alt="Icono SARA" 
+                class="w-8 h-8 sm:w-10 sm:h-10"
+            />
+            <span class="md:text-3xl xl:text-lg">Ir a SARA</span>
+            </a>
+        </div>
+    </div>
+</section>

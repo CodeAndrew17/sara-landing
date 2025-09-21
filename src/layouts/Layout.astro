@@ -1,0 +1,18 @@
+---
+import "../styles/global.css"; // estilos globales (Tailwind importado aquí)
+import "@fontsource-variable/onest"; // fuente
+---
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>SARA</title>
+    </head>
+    <body
+        class="min-h-screen w-screen text-white p-4 box-border overflow-y-auto overflow-x-hidden"
+        style="background: linear-gradient(to right, #0052D4 0%, #4364F7 50%, #6FB1FC 100%);"
+    >
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <slot />
+        </div>
+    </body>
+</html>

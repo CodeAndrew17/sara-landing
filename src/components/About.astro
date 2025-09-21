@@ -1,0 +1,43 @@
+---
+//componente para hablar sobre sara con el video demo 
+
+import ProjectCard from "./ProjectCard.astro"
+
+const proyectos = [
+    {
+        titulo: "Demo SARA",
+        descripcion: "Demostración rápida del funcionamiento general de SARA.",
+        imagen: "../images/login-sara.png",
+        video: "../videos/compresed-sara-v3.mp4",
+        techs: ["react.svg", "django.svg", "mongodb.svg", "mysql.svg", "python.svg", "javascript.svg"]
+    }
+];
+---
+
+<section 
+    id="About"
+    class="bg-white/60 backdrop-blur-[12px] p-10 rounded-[2.5rem] shadow-[0_20px_40px_rgba(0,0,0,0.3)] text-center border
+    border-white/80 ring-4 ring-white/40 transition-all duration-500 hover:scale-[1.01] mt-5 mb-10"
+>
+    <div>
+        <h2 class="text-4xl font-bold mb-6 text-gray-800">¿Qué es SARA?</h2>
+        <p class="text-lg text-gray-700 mb-5 md:text-3xl xl:text-lg">
+            <strong>SARA</strong> es una aplicación web para gestionar solicitudes de peritaje vehicular. Automatiza procesos, 
+            mejora la experiencia del usuario y optimiza la precisión en los diagnósticos.
+        </p>
+        <p class="text-base text-gray-500 mb-4">
+            A continuación, presentamos una demostración rápida del funcionamiento general de SARA.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-8">
+            {proyectos.map(proyecto => (
+                <ProjectCard
+                title={proyecto.titulo}
+                description={proyecto.descripcion}
+                image={proyecto.imagen}
+                video={proyecto.video}
+                techs={proyecto.techs}
+                />
+            ))}
+        </div>
+    </div>
+</section>
